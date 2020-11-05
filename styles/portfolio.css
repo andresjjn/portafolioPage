@@ -10,7 +10,11 @@
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
-    margin: 0 30px;
+    margin: 20px 50px;
+}
+
+.last-card {
+    margin-bottom: 50px;
 }
 
 .card .card-body {
@@ -35,9 +39,31 @@
     font-size: 14px;
 }
 
-.card .card-body.front {
+.card .card-body.front1 {
     background: url(../images/Screen_shot_game.png);
     background-size: 100%;
+}
+
+.card .card-body.front2 {
+    background: url(../images/b68cd1e385963da099899f51ee5f3a6bbf0adcb3.jpg);
+    background-size: 100%;
+}
+
+.card .card-body.front3 {
+    background: url(../images/Screenshot\ from\ 2020-11-04\ 18-41-30.png);
+    background-size: 100%;
+}
+
+.card .card-body.front4 {
+    background: url(../images/lobbi.png);
+    background-size: 100%;
+}
+
+.card .card-body.front5 {
+    background: url(../images/0.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card .card-body.back {
@@ -54,6 +80,10 @@
     transform: perspective(500px) rotateY(360deg);
 }
 
+.card:hover .card-body.back5 {
+    justify-content: center;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -63,6 +93,7 @@
 
 .tech-icon {
     width: 40px;
+    margin: 0 10px;
 }
 
 .btn {
@@ -77,4 +108,12 @@
 
 .btn:hover {
     border: 1px solid white;
+}
+
+.mongo-icon {
+    width: 90px;
+}
+
+.node-icon {
+    width:60px;
 }

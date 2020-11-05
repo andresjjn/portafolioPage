@@ -35,4 +35,13 @@
 .technology-icon {
     width: 60px;
     margin: 10px 30px;
+    transition: all 0.5;
+}
+
+.technology-icon:hover {
+    transition: all 0.5;
+    transform: scale(1.2);
+}
+.mongo-icon {
+    width: 90px;
 }
