@@ -23,7 +23,7 @@ main {
 }
 
 .info {
-    width: 20%;
+    width: 30%;
     height: 100vh;
     z-index: 100;
     background-color: #454545;
@@ -37,7 +37,8 @@ main {
 .info-profile-picture {
     width: 150px;
     border-radius: 50%;
-    /* border: 5px solid gold; */
+    border: 2px solid gold;
+    margin: 10% ;
 }
 
 .info-profile-name {
