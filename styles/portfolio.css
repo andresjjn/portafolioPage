@@ -1,0 +1,80 @@
+.info-nav-portfolio {
+    background-color: #545454;
+}
+
+.card {
+    border: 1px solid gold;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    margin: 0 30px;
+}
+
+.card .card-body {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    text-align: center;
+    transition: .6s ease-in-out;
+    backface-visibility: hidden;
+    padding: 20px;
+    transform: perspective(500px) rotateY(0deg)
+}
+
+.card .card-body p {
+    font-size: 14px;
+}
+
+.card .card-body.front {
+    background: url(../images/Screen_shot_game.png);
+    background-size: 100%;
+}
+
+.card .card-body.back {
+    background-color: #545454;
+    color: white;
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card:hover .card-body.front {
+    transform: perspective(1000px) rotateY(180deg);
+}
+
+.card:hover .card-body.back {
+    transform: perspective(500px) rotateY(360deg);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tech-icon {
+    width: 40px;
+}
+
+.btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #545454;
+    border: 1px solid gold;
+    outline: none;
+    font-size: 15px;
+}
+
+.btn:hover {
+    border: 1px solid white;
+}
