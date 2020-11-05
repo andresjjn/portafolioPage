@@ -3,7 +3,6 @@
 }
 
 .card {
-    border: 1px solid gold;
     width: 350px;
     height: 350px;
     display: flex;
@@ -11,6 +10,7 @@
     align-items: center;
     transform-style: preserve-3d;
     margin: 20px 50px;
+    border-radius: 10px;
 }
 
 .last-card {
@@ -46,7 +46,9 @@
 
 .card .card-body.front2 {
     background: url(../images/b68cd1e385963da099899f51ee5f3a6bbf0adcb3.jpg);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card .card-body.front3 {
@@ -56,7 +58,9 @@
 
 .card .card-body.front4 {
     background: url(../images/lobbi.png);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card .card-body.front5 {
